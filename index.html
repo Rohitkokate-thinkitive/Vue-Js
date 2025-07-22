@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <img :class="gender" :src="picture" :alt="firstName">
+        <h1>Hello {{ firstName }} {{ lastName }}</h1>
+        <h3>Age: {{ age }}</h3>
+        <h3>Gender: {{ gender }}</h3>
+        <h3>Hobbies:{{ hobbies }}</h3>
+        <h3>Address: {{ address.street }}, {{ address.city }}, {{ address.state }}</h3>
+        <button @click="getUser()" v-bind:class="gender" >Get User</button>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> development version -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
